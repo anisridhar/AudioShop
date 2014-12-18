@@ -13,5 +13,7 @@ Key modules: openCV - must install through Canopy’s Package Manager
 
 File is typically run from Terminal, so all packages are consolidated. 
 
+For more information on code design and functionalities, see the design documents. 
+
 
 
