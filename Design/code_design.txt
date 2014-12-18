@@ -1,0 +1,64 @@
+Design of code
+
+PARENT/MANAGER CLASS - musicDeNoiser
+
+Class has a list of other classes that represent different pages/functionalities
+
+Manager class functions run the other class functions all on the same canvas, and
+regulates variables passing between different pages and page switching
+
+BAREPAGE CLASS
+ 
+bare minimum to create a page - all pages are subclasses of this class
+
+BUTTON CLASS
+
+creates a rectangular button of different sizes and shapes and labels, all buttons
+are subclasses of this base class
+
+TITLE CLASS
+
+creates title page/splash screen
+
+FINGERTRACKING CLASS
+
+opens up user interface to video and audio recording, this is where the major data
+is being collected
+
+overview of algorithm:
+tracks fingers on right hand
+uses a filter: if both are down, note is pa
+	       if one is down, note is da
+	       if both are up, refer note must be sa, ri, or ga
+	       detect number of blue blobs and their sizes to differentiate notes
+
+AUDIOEDIT CLASS
+
+displays a nice, easy to manipulate, user rendering of the recording, and allows
+the user to select areas to be denoised
+
+Key features: trackbar, highlighting selections, skip parts of track
+
+trackbar functionalities:
+pause/play, click-to-skip parts of the track, highlighting parts of track 
+inspired by garageband
+
+ANALYSIS CLASS
+
+displays two trackbars (see trackBar class)
+
+allows user to compare the selection and the replaced audio portion
+
+SAVEFILE CLASS
+
+allows user to specify the filename and saves the edited file
+
+END CLASS
+
+ending screen, exit
+
+
+
+
+
+
